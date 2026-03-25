@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dialog_level_up.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_level_up_dialog"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⬆️"
+        android:textSize="56sp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ПОВЫШЕНИЕ УРОВНЯ!"
+        android:textColor="@color/neon_gold"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.15"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvLevelUpLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/neon_blue"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:text="УРОВЕНЬ 5" />
+
+    <TextView
+        android:id="@+id/tvLevelUpRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/neon_cyan"
+        android:textSize="18sp"
+        android:gravity="center"
+        tools:text="D-Rank" />
+
+    <Button
+        android:id="@+id/btnLevelUpClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ПРОДОЛЖИТЬ"
+        android:backgroundTint="@color/neon_blue"
+        android:textColor="@color/background_dark"
+        android:textStyle="bold"
+        android:paddingHorizontal="32dp" />
+</LinearLayout>

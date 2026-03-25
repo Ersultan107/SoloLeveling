@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- include_stats_bars.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="12dp">
+
+    <!-- Sleep -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🌙 Сон"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <ProgressBar
+            android:id="@+id/progressSleep"
+            style="@style/ProgressBar.Neon"
+            android:layout_width="120dp"
+            android:layout_height="6dp"
+            android:max="100"
+            android:progress="80" />
+
+        <TextView
+            android:id="@+id/tvSleepScore"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="@color/neon_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="80%" />
+    </LinearLayout>
+
+    <!-- Productivity -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⚡ Продуктивность"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <ProgressBar
+            android:id="@+id/progressProductivity"
+            style="@style/ProgressBar.Neon"
+            android:layout_width="120dp"
+            android:layout_height="6dp"
+            android:max="100"
+            android:progress="65" />
+
+        <TextView
+            android:id="@+id/tvProductivityScore"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="@color/neon_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="65%" />
+    </LinearLayout>
+
+    <!-- Fitness -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="💪 Фитнес"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <ProgressBar
+            android:id="@+id/progressFitness"
+            style="@style/ProgressBar.Neon"
+            android:layout_width="120dp"
+            android:layout_height="6dp"
+            android:max="100"
+            android:progress="55" />
+
+        <TextView
+            android:id="@+id/tvFitnessScore"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="@color/neon_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="55%" />
+    </LinearLayout>
+</LinearLayout>

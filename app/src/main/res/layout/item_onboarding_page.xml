@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_onboarding_page.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvOnboardingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/neon_blue"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            tools:text="⚔️ Solo Leveling" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvOnboardingSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"
+            tools:text="Система саморазвития" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvOnboardingDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:lineSpacingMultiplier="1.6"
+            tools:text="Превратись в охотника своей жизни." />
+
+        <!-- Profile Setup (step 4 only) -->
+        <LinearLayout
+            android:id="@+id/layoutProfileSetup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInput.Neon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Твоё имя">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOnboardingName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="30"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInput.Neon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Имя ИИ-ассистента (напр. ARIA, NEXUS, MAX)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOnboardingAIName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="20"
+                    android:textColor="@color/text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Характер ИИ:"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgOnboardingPersonality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:checkedButton="@+id/rbOnboardingBalanced">
+
+                <RadioButton
+                    android:id="@+id/rbOnboardingFriendly"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="😊 Дружелюбный — мягкий, поддерживающий"
+                    android:textColor="@color/text_primary"
+                    android:buttonTint="@color/neon_blue"
+                    android:layout_marginVertical="2dp" />
+
+                <RadioButton
+                    android:id="@+id/rbOnboardingStrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="💪 Строгий — требовательный тренер"
+                    android:textColor="@color/text_primary"
+                    android:buttonTint="@color/neon_blue"
+                    android:layout_marginVertical="2dp" />
+
+                <RadioButton
+                    android:id="@+id/rbOnboardingBalanced"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="⚡ Сбалансированный — лучшее из двух"
+                    android:textColor="@color/text_primary"
+                    android:buttonTint="@color/neon_blue"
+                    android:layout_marginVertical="2dp" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dialog_edit_profile.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInput.Neon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Твоё имя"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEditName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLength="30"
+            android:textColor="@color/text_primary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInput.Neon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя ИИ-ассистента"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEditAIName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:maxLength="20"
+            android:textColor="@color/text_primary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Характер ИИ:"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rgPersonality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbFriendly"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="😊 Дружелюбный"
+            android:textColor="@color/text_primary"
+            android:buttonTint="@color/neon_blue" />
+
+        <RadioButton
+            android:id="@+id/rbStrict"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="💪 Строгий"
+            android:textColor="@color/text_primary"
+            android:buttonTint="@color/neon_blue" />
+
+        <RadioButton
+            android:id="@+id/rbBalanced"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="⚡ Сбалансированный"
+            android:textColor="@color/text_primary"
+            android:buttonTint="@color/neon_blue" />
+    </RadioGroup>
+</LinearLayout>

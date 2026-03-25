@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_analytics.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📊 Аналитика"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRefreshAnalysis"
+                style="@style/Button.NeonOutlined"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="↻ Обновить"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Score Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/neon_blue"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Общий показатель"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvMoodLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textColor="@color/text_primary"
+                            android:textSize="14sp"
+                            tools:text="Хорошее состояние ✅" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvOverallScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/neon_blue"
+                        android:textSize="48sp"
+                        android:textStyle="bold"
+                        tools:text="72" />
+                </LinearLayout>
+
+                <!-- Stats Bars -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                            android:text="🌙 Сон" android:textColor="@color/text_secondary" android:textSize="13sp" />
+                        <ProgressBar android:id="@+id/progressSleepAnalytics" style="@style/ProgressBar.Neon"
+                            android:layout_width="120dp" android:layout_height="6dp" android:max="100" />
+                        <TextView android:id="@+id/tvSleepScoreAnalytics" android:layout_width="40dp"
+                            android:layout_height="wrap_content" android:gravity="end" android:textColor="@color/neon_blue"
+                            android:textSize="12sp" android:textStyle="bold" tools:text="80%" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                            android:text="⚡ Продуктивность" android:textColor="@color/text_secondary" android:textSize="13sp" />
+                        <ProgressBar android:id="@+id/progressProductivityAnalytics" style="@style/ProgressBar.Neon"
+                            android:layout_width="120dp" android:layout_height="6dp" android:max="100" />
+                        <TextView android:id="@+id/tvProductivityScoreAnalytics" android:layout_width="40dp"
+                            android:layout_height="wrap_content" android:gravity="end" android:textColor="@color/neon_blue"
+                            android:textSize="12sp" android:textStyle="bold" tools:text="65%" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                            android:text="💪 Фитнес" android:textColor="@color/text_secondary" android:textSize="13sp" />
+                        <ProgressBar android:id="@+id/progressFitnessAnalytics" style="@style/ProgressBar.Neon"
+                            android:layout_width="120dp" android:layout_height="6dp" android:max="100" />
+                        <TextView android:id="@+id/tvFitnessScoreAnalytics" android:layout_width="40dp"
+                            android:layout_height="wrap_content" android:gravity="end" android:textColor="@color/neon_blue"
+                            android:textSize="12sp" android:textStyle="bold" tools:text="55%" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Режим сложности:"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvDifficultyMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/neon_green"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:text="Стандартный" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="💡 Рекомендация:"
+                    android:textColor="@color/neon_blue"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvRecommendationText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.4"
+                    tools:text="Поддерживай текущий ритм." />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Sleep Chart -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/neon_blue_dim"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📈 История сна (7 дней)"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chartSleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Stats Grid -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/card_background"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/neon_blue_dim"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏆 Статистика"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:columnCount="3"
+                    android:rowCount="2">
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_columnWeight="1" android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <TextView android:id="@+id/tvStatStreak" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:textColor="@color/neon_orange"
+                            android:textSize="24sp" android:textStyle="bold" tools:text="7" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🔥 Серия" android:textColor="@color/text_secondary" android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_columnWeight="1" android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <TextView android:id="@+id/tvStatTotalQuests" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:textColor="@color/neon_blue"
+                            android:textSize="24sp" android:textStyle="bold" tools:text="42" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="⚔️ Квестов" android:textColor="@color/text_secondary" android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_columnWeight="1" android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <TextView android:id="@+id/tvStatLevel" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:textColor="@color/neon_cyan"
+                            android:textSize="24sp" android:textStyle="bold" tools:text="5" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="⬆️ Уровень" android:textColor="@color/text_secondary" android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_columnWeight="1" android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <TextView android:id="@+id/tvStatCoins" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:textColor="@color/neon_gold"
+                            android:textSize="24sp" android:textStyle="bold" tools:text="350" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="💰 Монеты" android:textColor="@color/text_secondary" android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_columnWeight="1" android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <TextView android:id="@+id/tvStatLongestStreak" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:textColor="@color/neon_green"
+                            android:textSize="24sp" android:textStyle="bold" tools:text="14" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="📈 Рекорд" android:textColor="@color/text_secondary" android:textSize="11sp" />
+                    </LinearLayout>
+                </GridLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View android:layout_width="match_parent" android:layout_height="16dp" />
+    </LinearLayout>
+</ScrollView>

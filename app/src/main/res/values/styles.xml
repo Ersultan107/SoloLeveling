@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base App Theme -->
+    <style name="Theme.SoloLeveling" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/neon_blue</item>
+        <item name="colorPrimaryDark">@color/background_dark</item>
+        <item name="colorAccent">@color/neon_blue</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:navigationBarColor">@color/background_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <!-- Splash / Onboarding -->
+    <style name="Theme.SoloLeveling.Splash" parent="Theme.SoloLeveling">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Dark Alert Dialog -->
+    <style name="DarkAlertDialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="colorSurface">@color/card_background</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorPrimary">@color/neon_blue</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <!-- Neon Button -->
+    <style name="Button.Neon" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/neon_blue</item>
+        <item name="android:textColor">@color/background_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <!-- Outlined Neon Button -->
+    <style name="Button.NeonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/neon_blue</item>
+        <item name="android:textColor">@color/neon_blue</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Neon TextInputLayout -->
+    <style name="TextInput.Neon" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/neon_blue</item>
+        <item name="hintTextColor">@color/neon_blue</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="boxBackgroundColor">@color/card_background</item>
+        <item name="endIconTint">@color/neon_blue</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="Card.Neon" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/neon_blue_dim</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">12dp</item>
+    </style>
+
+    <!-- Boss Card Style -->
+    <style name="Card.Boss" parent="Card.Neon">
+        <item name="strokeColor">@color/difficulty_legendary</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <!-- Chip Style -->
+    <style name="Chip.Neon" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@color/button_secondary</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="chipStrokeColor">@color/neon_blue_dim</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="checkedIconTint">@color/neon_blue</item>
+    </style>
+
+    <!-- ProgressBar Neon -->
+    <style name="ProgressBar.Neon" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressTint">@color/neon_blue</item>
+        <item name="android:progressBackgroundTint">@color/progress_background</item>
+        <item name="android:minHeight">6dp</item>
+        <item name="android:maxHeight">6dp</item>
+    </style>
+
+    <!-- Tab Layout -->
+    <style name="TabLayout.Neon" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabSelectedTextColor">@color/neon_blue</item>
+        <item name="tabTextColor">@color/text_secondary</item>
+        <item name="tabIndicatorColor">@color/neon_blue</item>
+        <item name="tabBackground">@android:color/transparent</item>
+        <item name="android:background">@color/background_dark</item>
+    </style>
+
+    <!-- Bottom Navigation -->
+    <style name="BottomNavigation.Neon" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemTextColor">@color/nav_item_color</item>
+        <item name="itemIconTint">@color/nav_item_color</item>
+        <item name="android:background">@color/card_background</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+</resources>

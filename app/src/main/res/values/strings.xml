@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Solo Leveling</string>
+    <string name="accessibility_service_label">Solo Leveling Assistant</string>
+    <string name="accessibility_service_description">Позволяет определять активное приложение для умного управления уведомлениями и режимом не беспокоить.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_quests">Квесты</string>
+    <string name="nav_chat">Чат</string>
+    <string name="nav_analytics">Анализ</string>
+    <string name="nav_profile">Профиль</string>
+
+    <!-- Home -->
+    <string name="title_daily_quests">Ежедневные квесты</string>
+    <string name="title_analysis">Анализ состояния</string>
+    <string name="title_boss_quest">Босс-квест</string>
+    <string name="label_xp">XP</string>
+    <string name="label_streak">Серия</string>
+    <string name="label_coins">Монеты</string>
+
+    <!-- Quests -->
+    <string name="btn_complete_quest">Выполнено</string>
+    <string name="empty_quests">Нет активных квестов.\nЗайди в чат и попроси ИИ создать задания!</string>
+
+    <!-- Chat -->
+    <string name="hint_message">Напиши сообщение…</string>
+    <string name="btn_send">Отправить</string>
+    <string name="ai_typing">печатает…</string>
+    <string name="quick_how_are_you">Как дела?</string>
+    <string name="quick_analyze">Анализ прогресса</string>
+    <string name="quick_new_quest">Новый квест</string>
+    <string name="quick_advice">Совет</string>
+    <string name="quick_tired">Я устал</string>
+
+    <!-- Profile -->
+    <string name="title_profile">Профиль</string>
+    <string name="title_settings">Настройки</string>
+    <string name="btn_edit_profile">Редактировать</string>
+    <string name="label_safe_mode">Безопасный режим</string>
+    <string name="label_pause_system">Пауза системы</string>
+    <string name="label_quiet_hours">Тихие часы</string>
+    <string name="btn_emergency_stop">Экстренная остановка</string>
+
+    <!-- Onboarding -->
+    <string name="btn_next">Далее</string>
+    <string name="btn_back">Назад</string>
+    <string name="btn_start">Начать путь!</string>
+    <string name="hint_your_name">Твоё имя</string>
+    <string name="hint_ai_name">Имя ИИ-ассистента</string>
+    <string name="label_personality">Характер ИИ</string>
+    <string name="personality_friendly">😊 Дружелюбный</string>
+    <string name="personality_strict">💪 Строгий</string>
+    <string name="personality_balanced">⚡ Сбалансированный</string>
+
+    <!-- Sleep -->
+    <string name="btn_sleep_in">🌙 Иду спать</string>
+    <string name="btn_wake_up">☀️ Проснулся</string>
+
+    <!-- System -->
+    <string name="system_active">⚡ Система активна</string>
+    <string name="system_paused">⏸ Система на паузе</string>
+    <string name="system_safe_mode">⚠️ Безопасный режим</string>
+
+    <!-- Ranks -->
+    <string name="rank_e">E-Ранг</string>
+    <string name="rank_d">D-Ранг</string>
+    <string name="rank_c">C-Ранг</string>
+    <string name="rank_b">B-Ранг</string>
+    <string name="rank_a">A-Ранг</string>
+    <string name="rank_s">S-Ранг</string>
+    <string name="rank_ss">SS-Ранг</string>
+    <string name="rank_sss">SSS-Ранг</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Neon Blue Dark Theme -->
+    <color name="background_dark">#060B14</color>
+    <color name="background_card">#0D1B2A</color>
+    <color name="card_background">#0D1B2A</color>
+    <color name="card_elevated">#112233</color>
+    <color name="surface">#0F1923</color>
+
+    <!-- Neon Colors -->
+    <color name="neon_blue">#00B4D8</color>
+    <color name="neon_blue_dim">#0077B6</color>
+    <color name="neon_blue_glow">#48CAE4</color>
+    <color name="neon_cyan">#00F5FF</color>
+    <color name="neon_purple">#7B2FBE</color>
+    <color name="neon_green">#39FF14</color>
+    <color name="neon_orange">#FF6B35</color>
+    <color name="neon_red">#FF073A</color>
+    <color name="neon_gold">#FFD700</color>
+
+    <!-- Text -->
+    <color name="text_primary">#E8F4FD</color>
+    <color name="text_secondary">#7EAECF</color>
+    <color name="text_disabled">#3A5470</color>
+    <color name="text_accent">#00B4D8</color>
+
+    <!-- Rank Colors -->
+    <color name="rank_e">#9E9E9E</color>
+    <color name="rank_d">#4CAF50</color>
+    <color name="rank_c">#2196F3</color>
+    <color name="rank_b">#9C27B0</color>
+    <color name="rank_a">#FF9800</color>
+    <color name="rank_s">#F44336</color>
+    <color name="rank_ss">#FF4081</color>
+    <color name="rank_sss">#00BCD4</color>
+
+    <!-- Difficulty Colors -->
+    <color name="difficulty_easy">#39FF14</color>
+    <color name="difficulty_normal">#00B4D8</color>
+    <color name="difficulty_hard">#FF9800</color>
+    <color name="difficulty_epic">#9C27B0</color>
+    <color name="difficulty_legendary">#FF073A</color>
+
+    <!-- UI Elements -->
+    <color name="divider">#1A2E42</color>
+    <color name="overlay_dim">#CC000000</color>
+    <color name="button_primary">#00B4D8</color>
+    <color name="button_secondary">#1A3A52</color>
+    <color name="input_background">#0D1B2A</color>
+    <color name="progress_background">#1A2E42</color>
+
+    <!-- Notification bar -->
+    <color name="status_bar">#060B14</color>
+    <color name="nav_bar">#060B14</color>
+
+    <!-- Material -->
+    <color name="colorPrimary">#00B4D8</color>
+    <color name="colorPrimaryDark">#060B14</color>
+    <color name="colorAccent">#00B4D8</color>
+    <color name="colorOnPrimary">#060B14</color>
+    <color name="colorSurface">#0D1B2A</color>
+    <color name="colorOnSurface">#E8F4FD</color>
+</resources>
